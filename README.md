@@ -3,7 +3,7 @@ A blog website built by Node.js, Express.js and MongoDB.
 For any questions, please email tianwen.chen.25@dartmouth.edu\
 \
 Home page view:
-![Alt text](image-5.png)
+![Alt text](image.png)
 
 ## User Instruction
 * Clone the repository. Run `npm install` in the terminal. This will install all the required dependencies and packages onto your machine.
