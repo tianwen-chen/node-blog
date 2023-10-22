@@ -1,5 +1,6 @@
 # Node Blog 
-A blog website built by Node.js, Express.js and MongoDB.
+A blog website built by Node.js, Express.js and MongoDB.\
+Supported activities: View, Edit, Add, Delete blogs.\
 For any questions, please email tianwen.chen.25@dartmouth.edu\
 \
 Home page view:
