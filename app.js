@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const { create, result } = require('lodash');
 const { default: mongoose } = require('mongoose');
@@ -10,10 +11,8 @@ const blogRoutes = require('./routes/blogRoutes');
 const app = express();
 
 // connect mongoDB & listen for requests
-const NAME = process.env.USER_NAME;
-const PASSWORD = process.env.USER_PASSWORD;
-const CLUSTER_NAME = process.env.CLUSTER_NAME;
-const dbURI = `mongodb+srv://${NAME}:${PASSWORD}@${CLUSTER_NAME}.mongodb.net/`
+const dbURI = process.env.MONGO_URI;
+
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then( (result) => app.listen(3000))
     .catch((err) => console.log(err));
